@@ -4,7 +4,7 @@ function App() {
   
 
   return (
-    <div className='flex-row justify-center items-center w-full h-full absolute'>
+    <div className='flex-row justify-center items-center w-full h-full absolute bg-zinc-900 text-white'>
       <h1 className='flex items-center justify-center text-3xl m-10'>
         Lot Size Calculator
       </h1>

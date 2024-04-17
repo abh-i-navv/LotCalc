@@ -43,32 +43,32 @@ export default function Calculator() {
     }
 
   return (
-    <div className='w-[500px] h-[500px] m-auto relative border-2 border-black '>
-        <div className='grid grid-cols-2 m-2'>
-            <div className='h-auto w-auto m-5'>
-                <label htmlFor='opening'>Opening Price</label>
-                <input id='opening' placeholder='opening price' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+    <div className='sm:w-[500px] h-auto m-auto relative border-2 bg-zinc-900 rounded-3xl border-[#6c35de] p-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 sm:m-2'>
+            <div className='h-auto w-auto m-3 sm:m-5'>
+                <label htmlFor='opening' className='py=3'>Opening Price</label>
+                <input id='opening' placeholder='opening price' className='w-full h-10 mt-2 p-3 text-[#ffffff] placeholder:text-[#ffffff] bg-zinc-800 border border-[#6c35de] rounded-lg' onChange={handleOnChange}></input>
             </div>
-            <div className='h-auto w-auto m-5'>
+            <div className='h-auto w-auto m-3 sm:m-5'>
                 <label htmlFor='closing'>Stop Price</label>
-                <input id='closing' placeholder='closing price' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='closing' placeholder='closing price' className='w-full h-10 mt-2 p-3 text-[#ffffff] placeholder:text-[#ffffff] bg-zinc-800 border border-[#6c35de] rounded-lg' onChange={handleOnChange}></input>
             </div>
-            <div className='h-auto w-auto m-5'>
+            <div className='h-auto w-auto m-3 sm:m-5'>
                 <label htmlFor='size'>Account Size</label>
-                <input id='size' placeholder='account size' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='size' placeholder='account size' className='w-full h-10 mt-2 p-3 text-[#ffffff] placeholder:text-[#ffffff] bg-zinc-800 border border-[#6c35de] rounded-lg' onChange={handleOnChange}></input>
             </div>
 
-            <div className='h-auto w-auto m-5'>
+            <div className='h-auto w-auto m-3 sm:m-5'>
                 <label htmlFor='risk'>Risk %</label><br></br>
-                <input id='risk' placeholder='risk percentage' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='risk' placeholder='risk percentage' className='w-full h-10 mt-2 p-3 text-[#ffffff] placeholder:text-[#ffffff] bg-zinc-800 border border-[#6c35de] rounded-lg' onChange={handleOnChange}></input>
             </div>
-            <div className='h-auto w-auto m-5'>
+            <div className='h-auto w-auto m-3 sm:m-5'>
                 <label htmlFor='contract'>Contract Size</label><br></br>
-                <input id='contract' placeholder='contract size' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='contract' placeholder='contract size' className='w-full h-10 mt-2 p-3 text-[#ffffff] placeholder:text-[#ffffff] bg-zinc-800 border border-[#6c35de] rounded-lg' onChange={handleOnChange}></input>
             </div>
         </div>
-        <div className='flex justify-center items-center'>
-            <button onClick={lotCalc} className='border border-black hover:bg-slate-200 rounded-lg p-2 bg-primary text-primary-foreground hover:bg-primary/90'>Calculate</button>
+        <div className='flex justify-center items-center m-5'>
+            <button onClick={lotCalc} className='border border-[#6c35de] hover:bg-zinc-950 rounded-xl md:w-[150px] p-2 '>Calculate</button>
         </div>
         <span className='flex justify-center items-center m-5 text-xl'>
         {lot ? lot: <></>}
