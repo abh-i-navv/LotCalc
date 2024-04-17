@@ -47,24 +47,24 @@ export default function Calculator() {
         <div className='grid grid-cols-2 m-2'>
             <div className='h-auto w-auto m-5'>
                 <label htmlFor='opening'>Opening Price</label>
-                <input id='opening' value={data.open} placeholder='opening price' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='opening' placeholder='opening price' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
             </div>
             <div className='h-auto w-auto m-5'>
                 <label htmlFor='closing'>Stop Price</label>
-                <input id='closing' value={data.close} placeholder='closing price' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='closing' placeholder='closing price' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
             </div>
             <div className='h-auto w-auto m-5'>
                 <label htmlFor='size'>Account Size</label>
-                <input id='size' value={data.account} placeholder='account size' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='size' placeholder='account size' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
             </div>
 
             <div className='h-auto w-auto m-5'>
                 <label htmlFor='risk'>Risk %</label><br></br>
-                <input id='risk' value={data.risk} placeholder='risk percentage' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='risk' placeholder='risk percentage' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
             </div>
             <div className='h-auto w-auto m-5'>
                 <label htmlFor='contract'>Contract Size</label><br></br>
-                <input id='contract' value={data.contract} placeholder='contract size' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
+                <input id='contract' placeholder='contract size' className='w-full h-10 mt-2 p-2 border border-black' onChange={handleOnChange}></input>
             </div>
         </div>
         <div className='flex justify-center items-center'>
